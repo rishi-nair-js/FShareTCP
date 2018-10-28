@@ -51,12 +51,13 @@ func sendFileToClient(connection net.Conn) {
 	sendBuffer := make([]byte, BUFFERSIZE)
 	for {
 		_, err = file.Read(sendBuffer)
-		if err != io.EOF {
+		if err == io.EOF {
 			break
 		}
 		connection.Write(sendBuffer)
 	}
 	fmt.Println(" File has been send closing connection !!")
+	os.Exit(0)
 	return
 }
 

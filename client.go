@@ -22,7 +22,7 @@ func Client() {
 	connection.Read(bufferFileSize)
 	filelabel := strings.Trim(string(bufferFileName), ":")
 	fileSize, _ := strconv.ParseInt(strings.Trim(string(bufferFileSize), ":"), 10, 64)
-	newFile, err := os.Create(filelabel)
+	newFile, err := os.Create(location + filelabel)
 	if err != nil {
 		panic(err)
 	}
