@@ -14,5 +14,6 @@ To Run the client - Run FshareTCP.exe ; optional flag -save to change the defaul
 
 
 Insipration and credits
-@schollz - https://github.com/schollz/croc
+@schollz - https://github.om/schollz/croc
+<br>
 http://mrwaggel.be/post/golang-transfer-a-file-over-a-tcp-socket/
